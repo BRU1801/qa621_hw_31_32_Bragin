@@ -1,0 +1,11 @@
+[
+  {"id": "unknown-room", "room": "vip", "people": 2, "hours": 1, "expected_status": 404},
+  {"id": "people-zero", "room": "small", "people": 0, "hours": 1, "expected_status": 400},
+  {"id": "people-one", "room": "small", "people": 1, "hours": 1, "expected_status": 201},
+  {"id": "people-equal-capacity", "room": "medium", "people": 8, "hours": 2, "expected_status": 201},
+  {"id": "people-over-capacity", "room": "small", "people": 5, "hours": 1, "expected_status": 400},
+  {"id": "hours-zero", "room": "small", "people": 2, "hours": 0, "expected_status": 400},
+  {"id": "hours-one", "room": "small", "people": 2, "hours": 1, "expected_status": 201},
+  {"id": "hours-eight", "room": "large", "people": 10, "hours": 8, "expected_status": 201},
+  {"id": "hours-nine", "room": "large", "people": 10, "hours": 9, "expected_status": 400}
+]
